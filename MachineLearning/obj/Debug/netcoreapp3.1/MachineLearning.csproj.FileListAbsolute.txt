@@ -1,0 +1,4 @@
+C:\Users\User\Documents\C++\MachineLearning\MachineLearning\MachineLearning\bin\Debug\netcoreapp3.1\MachineLearning.exe
+C:\Users\User\Documents\C++\MachineLearning\MachineLearning\MachineLearning\obj\Debug\netcoreapp3.1\MachineLearning.csprojAssemblyReference.cache
+C:\Users\User\Documents\C++\MachineLearning\MachineLearning\MachineLearning\obj\Debug\netcoreapp3.1\MachineLearning.AssemblyInfoInputs.cache
+C:\Users\User\Documents\C++\MachineLearning\MachineLearning\MachineLearning\obj\Debug\netcoreapp3.1\MachineLearning.AssemblyInfo.cs
