@@ -32,13 +32,58 @@ namespace MachineLearning
 
             var predictor = mlContext.Model.CreatePredictionEngine<FlowerData, FlowerPrediction>(model);
 
-
+            Console.WriteLine("predict data!");
             var prediction = predictor.Predict(new FlowerData()
             {
-                SepalLength = 2.3f,
-                SepalWidth = 1.2f,
-                PetalLength = 1.5f,
+                SepalLength = 5.3f,
+                SepalWidth = 3.6f,
+                PetalLength = 1.2f,
+                PetalWidth = 0.3f
+            });
+            Console.WriteLine($"***Prediction: {prediction.PredictPlant}***");
+            Console.WriteLine($"*** Scores: {string.Join(" ", prediction.Scores)}***");
+            
+            //different flower data
+            
+            prediction = predictor.Predict(new FlowerData()
+            {
+                SepalLength = 6.5f,
+                SepalWidth = 2.4f,
+                PetalLength = 5.7f,
+                PetalWidth = 1.9f
+            });
+            Console.WriteLine($"***Prediction: {prediction.PredictPlant}***");
+            Console.WriteLine($"*** Scores: {string.Join(" ", prediction.Scores)}***");
+
+
+            prediction = predictor.Predict(new FlowerData()
+            {
+                SepalLength = 4.8f,
+                SepalWidth = 0.0f,
+                PetalLength = 1.1f,
                 PetalWidth = 0.2f
+            });
+            Console.WriteLine($"***Prediction: {prediction.PredictPlant}***");
+            Console.WriteLine($"*** Scores: {string.Join(" ", prediction.Scores)}***");
+
+
+            prediction = predictor.Predict(new FlowerData()
+            {
+                SepalLength = 7.0f,
+                SepalWidth = 3.2f,
+                PetalLength = 4.7f,
+                PetalWidth = 1.4f
+            });
+            Console.WriteLine($"***Prediction: {prediction.PredictPlant}***");
+            Console.WriteLine($"*** Scores: {string.Join(" ", prediction.Scores)}***");
+
+
+            prediction = predictor.Predict(new FlowerData()
+            {
+                SepalLength = 6.3f,
+                SepalWidth = 2.9f,
+                PetalLength = 4.9f,
+                PetalWidth = 1.7f
             });
             Console.WriteLine($"***Prediction: {prediction.PredictPlant}***");
             Console.WriteLine($"*** Scores: {string.Join(" ", prediction.Scores)}***");
